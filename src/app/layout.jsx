@@ -19,7 +19,12 @@ export default function RootLayout({ children }) {
 
   const footer = (
     <footer className="p-4 sm:p-8 grid place-items-center">
-      <p className={`text-indigo-500 ${fugaz.className}`}>This project is open source.</p>
+      <p className={`${fugaz.className}`}>
+        This project is open source.{" "}
+        <a href="https://github.com/Lappage/Zen-Mood-Tracker" className="text-indigo-500 hover:text-indigo-400">
+          Improve this page.
+        </a>
+      </p>
     </footer>
   );
   return (
